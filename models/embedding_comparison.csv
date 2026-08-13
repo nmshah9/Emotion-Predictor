@@ -1,0 +1,4 @@
+Embedding,Val F1 (weighted),Time (s)
+Bag-of-Words,0.891462632020699,0.87
+TF-IDF,0.882774292895537,1.24
+Word2Vec,0.341996060018499,5.24

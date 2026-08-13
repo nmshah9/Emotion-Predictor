@@ -1,0 +1,4 @@
+Model,Best Params,Accuracy,Precision (weighted),Recall (weighted),F1-score (weighted),Train Time (s)
+Logistic Regression (tuned),"{'C': 5, 'solver': 'saga'}",0.884,0.8839927166210656,0.884,0.8838973789836216,27.75
+Random Forest (tuned),"{'n_estimators': 200, 'min_samples_split': 2, 'max_depth': None}",0.88,0.8826092984416489,0.88,0.8809773076882452,51.61
+Decision Tree (tuned),"{'min_samples_split': 5, 'min_samples_leaf': 4, 'max_depth': None}",0.873,0.8741750787781664,0.873,0.8734050673333722,8.16
