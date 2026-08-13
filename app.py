@@ -26,6 +26,7 @@ import pandas as pd
 import streamlit as st
 
 from utils import clean_text
+from PIL import Image
 
 # --------------------------------------------------------------------------
 # PAGE CONFIG - sets browser tab title/icon and a wide, welcoming layout.
@@ -56,6 +57,17 @@ EMOTION_COLOR = {
     "love": "#FF6FA8",
     "surprise": "#4DFFB8",
 }
+# ============================================================
+# LOAD BANNER
+# ============================================================
+from PIL import Image
+banner = Image.open("banner.png")
+
+# ============================================================
+# DISPLAY BANNER
+# ============================================================
+
+st.image(banner, use_container_width=True)
 
 
 # --------------------------------------------------------------------------
@@ -225,3 +237,18 @@ st.caption(
     "Built with scikit-learn + Streamlit | Dataset: dair-ai Emotion dataset "
     "(train/val/test text;label format)"
 )
+
+# ============================================================
+# FOOTER
+# ============================================================
+
+st.markdown("---")
+
+st.markdown("""
+<div style='text-align: center;'>
+### 🎭 Emotion Detector"
+
+Built with ❤️ using Streamlit | Developed by nmshah9
+
+</div>
+""", unsafe_allow_html=True)
